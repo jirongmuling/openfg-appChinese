@@ -7,11 +7,11 @@
 
 | 文件 | 说明 |
 |---|---|
-| [`openfg-v1.2-release.zip`](releases/download/v1.2-zh/openfg-v1.2-release.zip) | **必需 · 模块** — 用 KernelSU / Magisk 刷入后重启。官方 v1.2 原版模块，未做任何改动 |
-| [`OpenFG_v1.2_zh-CN.apk`](releases/download/v1.2-zh/OpenFG_v1.2_zh-CN.apk) | **简体中文版 App** — v1.2 (105) 界面汉化，直接安装 |
+| [`openfg-v1.2-release.zip`](../../releases/download/v1.2-zh/openfg-v1.2-release.zip) | **必需 · 模块** — 用 KernelSU / Magisk 刷入后重启。官方 v1.2 原版模块，未做任何改动 |
+| [`OpenFG_v1.2_zh-CN.apk`](../../releases/download/v1.2-zh/OpenFG_v1.2_zh-CN.apk) | **简体中文版 App** — v1.2 (105) 界面汉化，直接安装 |
 | `openfg-app-v1.2.apk` | 官方原版 App（英文，可选对照） — [上游 Releases](https://github.com/OpenFGG/openfg-app/releases) |
 
-全部文件见 **[Releases → v1.2-zh](releases/tag/v1.2-zh)**；汉化补丁与中英对照表见 [`zh-CN/`](zh-CN)。
+全部文件见 **[Releases → v1.2-zh](../../releases/tag/v1.2-zh)**；汉化补丁与中英对照表见 [`zh-CN/`](zh-CN)。
 
 ### 安装顺序（照此操作，否则补帧不会生效）
 
@@ -48,7 +48,7 @@ To disable it for a game, toggle it off in the app and restart that game.
 
 ## Download
 
-Grab the **module zip** and the **APK** from the [Releases](releases) page.
+Grab the **module zip** and the **APK** from the [Releases](../../releases) page.
 **Both are needed:** flash the module, reboot, then install the app.
 
 ## Notes
