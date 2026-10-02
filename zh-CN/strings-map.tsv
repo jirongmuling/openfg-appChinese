@@ -1,0 +1,427 @@
+英文原文	中文译文
+   [PINNED]	   [已锁定]
+  (capped)	  （已限顶）
+ (API 	（API 
+ (Adreno-only). The Software and Video engines are used instead.	 （仅限 Adreno）。将改用 Software 与 Video 引擎。
+ (api 	（api 
+ (detected: GL)	 （检测到：GL）
+ (detected: VK)	 （检测到：VK）
+ (now 	（当前 
+ (panel=	（面板=
+ (sharpness 	（锐度 
+ (x	（×
+ GPU-shared buffer: 	 GPU 共享缓冲区： 
+ days ago	 天前
+ downloaded — reboot to finish installing.	 已下载 — 重启后完成安装。
+ driver — Vulkan games supported.	 驱动 — 支持 Vulkan 游戏。
+ fps (adaptive)	 fps（自适应）
+ h ago	 小时前
+ has hardware motion estimation.	 具备硬件运动估计。
+ in 	，位于 
+ is installed but the game is running 	 已安装，但游戏正在运行 
+ min ago	 分钟前
+ module active on 	 模块已激活于 
+ nit (manual)	 nit（手动）
+ nit · boost 	 nit · 增强 
+ node(s) refused. The phone is putting it back.	 个节点被拒绝。手机正在把它改回去。
+ node(s)).	 个节点）。
+ node(s).	 个节点。
+ of 	 共 
+ s ago	 秒前
+ selected game(s). Launch one and play a minute, then re-run — a live heartbeat is the definitive proof.	 个已选游戏。启动一个并玩一分钟，然后重新运行 — 实时心跳才是最终证据。
+ staged — reboot to apply (currently running 	 已暂存 — 重启后生效（当前运行 
+ vs app v	 对比 App v
+ · API: 	 · API：
+ · Detect true frame rate: 	 · 检测真实帧率： 
+ · Enhanced smoothing: 	 · 增强平滑： 
+ · Flow scale: 	 · 光流缩放： 
+ · Upscaler: 	 · 超分：
+ · Video playback FG: 	 · 视频播放补帧： 
+ · Zygisk: 	 · Zygisk：
+ · contrast 	 · 对比度 
+ · floor: 	 · 下限：
+ · gamma 	 · 伽马 
+ · peak 	 · 峰值 
+ · saturation 	 · 饱和度 
+ · thermal unlock 	 · 温控解锁 
+ — OpenFG can't capture/present game frames on this driver.	 — OpenFG 无法在此驱动上捕获/呈现游戏画面。
+ — available modes: 	 — 可用模式： 
+ — passed	 — 已通过
+ — reboot needed	 — 需要重启
+ → presented 	 → 呈现 
+" (ARM only).	”（仅 ARM）。
+%) — 100 = as the game renders; right for punchier shadows and highlights	%) — 100 = 与游戏渲染一致；调高可让阴影和高光更有冲击力
+%) — 100 = as the game renders; right if HDR mode looks washed out	%) — 100 = 与游戏渲染一致；若 HDR 模式看起来发白可调高
+(empty — game never reached the module)	（空 — 游戏从未到达模块）
+(exit code: 	（退出码： 
+(no explicit fault record in the kernel log)	（内核日志中没有明确的故障记录）
+(no pstore record — ramoops not enabled on this kernel, or clean boot)	（无 pstore 记录 — 该内核未启用 ramoops，或本次为正常启动）
+(none — kernel log empty or no driver line; capture BEFORE reboot)	（无 — 内核日志为空或没有驱动相关行；请在重启前抓取）
+(none — no crash recorded in this boot)	（无 — 本次启动未记录崩溃）
+) — 2.2 fits most games; left if dark areas look crushed, right for deeper blacks	） — 2.2 适合大多数游戏；暗部细节被压死时调小，想要更深黑位时调大
+) — OpenFG's overlay presenter needs Android 10 (API 29) or newer.	） — OpenFG 的悬浮呈现需要 Android 10（API 29）或更高版本。
+) — full support incl. vsync-locked pacing.	） — 完整支持，包括垂直同步锁定的节奏控制。
+) — reboot to finish installing.	） — 重启后完成安装。
+) — some Vulkan games may not work.	） — 部分 Vulkan 游戏可能无法运行。
+) — supported (pacing runs open-loop; Android 13+ adds vsync-locked pacing).	） — 已支持（节奏控制为开环运行；Android 13+ 提供垂直同步锁定节奏）。
+) — the pipeline works on this device.	） — 该设备上的流程可正常工作。
+). OpenFG injects into games through Zygisk: enable it in Magisk settings, or install the ZygiskNext module on KernelSU/APatch, then reboot.	）。OpenFG 通过 Zygisk 注入游戏：请在 Magisk 设置中启用它，或在 KernelSU/APatch 上安装 ZygiskNext 模块，然后重启。
+). The frame-generation shaders need ES 3.0.	）。补帧着色器需要 ES 3.0。
+, not the installed 	，而不是已安装的 
+-- last console lines before the reboot --	— 重启前的最后控制台输出 —
+. Flash the matching module zip and reboot so both are the same version.	。请刷入与之匹配的模块包并重启，使两者版本一致。
+. Reboot the device, then run the diagnostic again.	。重启设备，然后再次运行诊断。
+. Update whichever is older.	。更新较旧的那个。
+32-bit ARM — OpenGL games work; Vulkan games need a 64-bit device.	32 位 ARM — OpenGL 游戏可用；Vulkan 游戏需要 64 位设备。
+== dmesg (GPU fault records) ==	== dmesg（GPU 故障记录）==
+== dmesg (mali/kbase driver) ==	== dmesg（mali/kbase 驱动）==
+== logcat crash buffer ==	== logcat 崩溃缓冲区 ==
+== logcat tail (mali/vulkan/	== logcat 末尾（mali/vulkan/
+== pstore (previous boot — survives a forced reboot) ==	== pstore（上次启动 — 可在强制重启后保留）==
+== tombstones (pull these files separately if present) ==	== tombstones（若存在请单独提取这些文件）==
+Activation floor	激活阈值
+All required EGL/GL extensions present.	所有必需的 EGL/GL 扩展均已具备。
+Allow display over apps	允许显示在其他应用上层
+Already allowed OpenFG in your root manager? Restart the app to apply.	已在 root 管理器中授权 OpenFG？请重启应用以生效。
+Already off, but OpenFG has no saved values to put back. A reboot restores them.	原本就是关闭的，但 OpenFG 没有可恢复的已保存值。重启即可恢复。
+Alt VK capture: 	备用 VK 捕获： 
+Alternative VK Capture	备用 VK 捕获
+Android version	Android 版本
+Appearance	外观
+Applies to all enabled apps. Updates live while a game is running.	适用于所有已启用的应用。游戏运行时实时更新。
+Auto	自动
+Auto (was AI, shelved)	自动（曾为 AI，已搁置）
+Auto detects on the first launch. If the overlay/counter only shows up from the second launch, set the game's real API here.	首次启动时自动检测。如果悬浮层/计数器从第二次启动才出现，请在此设置游戏真实的 API。
+Back	返回
+Balanced	均衡
+Below this real FPS, frames pass straight through (no interpolation). Off = generate at any FPS.	低于此真实 FPS 时，帧将直接通过（不插帧）。关闭 = 任意 FPS 都生成。
+Bicubic	双三次
+Bicubic+	双三次+
+Bilinear	双线性
+Bottom-left	左下
+Bottom-right	右下
+Brightens highlights beyond normal screen white (HDR screens only). Live — applies immediately.	让高光超过普通屏幕白点（仅限 HDR 屏幕）。实时生效 — 立即应用。
+Brightness	亮度
+Brightness — where normal (non-highlight) content sits: match it to how bright your screen usually is (	亮度 — 普通（非高光）内容所在的位置：请与你平时使用的屏幕亮度相匹配（
+Building…	构建中…
+CPU architecture	CPU 架构
+Can't write /data/adb/openfg — the app can't tell the module which games to target.	无法写入 /data/adb/openfg — 应用无法告诉模块要针对哪些游戏。
+Check for updates	检查更新
+Checking	检测中
+Checking for updates…	正在检查更新…
+Checking this device…	正在检测此设备…
+Checking…	检测中…
+Chip	胶囊
+Classic	经典
+Cleans up motion around the edges of moving things. Costs a little extra GPU, so leave it off if your device gets hot.	清理移动物体边缘的拖影。会额外占用一点 GPU，设备发热时可关闭。
+Collecting…	采集中…
+Config storage	配置存储
+Contrast	对比度
+Contrast (	对比度（
+Copy	复制
+Copy a report of this game's OpenFG settings and your device — paste it in the community to share what works (or doesn't) on your phone.	复制本游戏 OpenFG 设置与设备的报告 — 粘贴到社区，分享哪些设置在你的手机上有效（或无效）。
+Copy crash log	复制崩溃日志
+Copy report	复制报告
+Couldn't allocate a 	无法分配 
+Couldn't check for updates (	无法检查更新（
+Couldn't initialize EGL — no usable GPU driver.	无法初始化 EGL — 没有可用的 GPU 驱动。
+Couldn't read display modes.	无法读取显示模式。
+Counter content	计数器内容
+Counter size	计数器大小
+Counter style	计数器样式
+Crash log copied	崩溃日志已复制
+Crash log saved	崩溃日志已保存
+Cubic	三次
+Cubic+	三次+
+Dark	深色
+Default	默认
+Detect true frame rate	检测真实帧率
+Device capabilities	设备能力
+Diagnostic launch	诊断启动
+Diagnostics	诊断
+Display	显示
+Display over other apps	显示在其他应用上层
+Docked to the screen edge. Turn off for the draggable floating menu	停靠在屏幕边缘。关闭后为可拖动的浮动菜单
+Download & install	下载并安装
+Downloading app	正在下载应用
+Downloading app…	正在下载应用…
+Downloading module	正在下载模块
+Downloading module…	正在下载模块…
+EGL native-buffer import	EGL 原生缓冲区导入
+Enable	启用
+Enable OpenFG	启用 OpenFG
+Engine — Auto uses hardware motion estimation when available	引擎 — 自动在有硬件运动估计时使用它
+Engine: 	引擎：
+Enhanced Smoothing	增强平滑
+Everything this device needs is in place. Toggle a game on and play.	此设备所需的一切都已就绪。打开一个游戏开关即可畅玩。
+Extended stats	扩展统计
+FAILED — 	失败 — 
+FG OFF	FG 关闭
+FG is running RIGHT NOW in 	FG 正在以下应用中运行 
+FG last ran 	FG 上次运行 
+FG: 	FG：
+FPS counter	FPS 计数器
+FPSGO Disabler	FPSGO 禁用器
+Failed to write config (need root).	写入配置失败（需要 root）。
+Finish	完成
+Flash the OpenFG module zip in your root manager (KernelSU / Magisk / APatch) and reboot to install the frame-generation engine.	在 root 管理器（KernelSU / Magisk / APatch）中刷入 OpenFG 模块包并重启，以安装补帧引擎。
+Floor	下限
+Flow	光流
+Flow engine	光流引擎
+Flow scale	光流缩放
+Flow scale — resolution of generated frames (lower = faster, softer)	光流缩放 — 生成帧的分辨率（越低越快、越柔）
+For emulators and Vulkan games where the overlay/counter shows the wrong thing (menus or controls) or nothing. Grabs the real game frames a different way. Turning this on also sets the API to Vulkan.	适用于悬浮层/计数器显示错误内容（菜单或控件）或什么都不显示的游戏，尤其是模拟器和 Vulkan 游戏。它以另一种方式抓取真实游戏画面。开启后也会把 API 设为 Vulkan。
+For emulators and app windows that redraw more often than the game draws. Turn on if frame generation isn't kicking in — leave it off for normal games. Live — applies immediately.	适用于重绘频率高于游戏绘制频率的模拟器和应用窗口。如果补帧没有生效请开启 — 普通游戏请保持关闭。实时生效 — 立即应用。
+For video apps (YouTube, media players): generates frames for the video itself. Works in landscape fullscreen playback only. The counter's API tag shows "Media" while it's active.	适用于视频应用（YouTube、播放器）：为视频本身生成帧。仅在横屏全屏播放时有效。激活时计数器的 API 标签会显示“Media”。
+Force max refresh rate	强制最高刷新率
+Frame counter	帧计数器
+Frame generation	帧生成
+Frame generation history	帧生成历史
+Frame generation not working in this game? Run a diagnostic launch and send the report to the developer.	本游戏补帧不工作？运行一次诊断启动，并把报告发给开发者。
+Frame generation should work here — check the amber notes below.	此处应该可以补帧 — 请查看下方的黄色提示。
+From a previous session (survives a reboot). Copy it before starting a new run — starting clears it.	来自上一次会话（重启后仍保留）。请在开始新一轮前复制它 — 开始会清空它。
+Full	完整
+GPU (OpenGL ES)	GPU（OpenGL ES）
+GPU features	GPU 特性
+GPU-shared buffer allocation OK at 	GPU 共享缓冲区分配正常，位于 
+GPU: 	GPU：
+Game	游戏
+Game closed — code X0	游戏已关闭 — 代码 X0
+Game: 	游戏：
+Gamma · shadow depth	Gamma · 阴影深度
+Global settings	全局设置
+Global: force max refresh 	全局：强制最高刷新 
+Grant	授予
+Grant root access	授予 root 权限
+Graphics API	图形 API
+Graphics buffers	图形缓冲区
+HDR: ON · paperwhite 	HDR：开启 · 纸白 
+HDR: off	HDR：关闭
+Hardware	硬件
+Hardware H.264 encoder present.	存在硬件 H.264 编码器。
+Hardware motion engine	硬件运动引擎
+HardwareBuffer needs Android 8.0+.	HardwareBuffer 需要 Android 8.0+。
+Highlight boost	高光增强
+Highlight boost — how hard bright spots (sun, effects) push toward the screen's peak (	高光增强 — 高亮区域（阳光、特效）向屏幕峰值推进的力度（
+Hook this app on next launch	下次启动时挂钩此应用
+Hz (	Hz（
+Hz max	Hz 上限
+IMAGE	图像
+Idle	空闲
+If your game is stuck at 60 FPS even with a 120Hz screen, this forces the screen to stay at its highest refresh rate so frame generation can reach it. Turn it on if the counter won't go above 60.	如果你的游戏在 120Hz 屏幕上仍卡在 60 FPS，此项会强制屏幕保持最高刷新率，好让补帧能达到该帧率。如果计数器上不去 60，请开启它。
+In-game overlay menu on startup (doesn't affect frame gen)	启动时显示游戏内悬浮菜单（不影响补帧）
+Injection (Zygisk)	注入（Zygisk）
+Install staged (	安装已暂存（
+Installed and active.	已安装并生效。
+Installed and enabled (	已安装并启用（
+Installing app…	正在安装应用…
+Installing module…	正在安装模块…
+Last crash trace	最后一次崩溃追踪
+Launch again	再次启动
+Light	浅色
+Live — applies immediately	实时 — 立即生效
+MIUI/HyperOS detected	检测到 MIUI/HyperOS
+Magisk built-in	Magisk 内置
+Magisk built-in Zygisk is enabled.	Magisk 内置 Zygisk 已启用。
+Measured: not measured — play the game with FG on, then share again	实测：未测量 — 开启补帧玩一会儿游戏，然后再次分享
+Measured: real 	实测：真实 
+MediaTek phones only. Turns off MediaTek's frame-rate governor, which speeds the phone up and down based on the game's own frame rate — not the rate frame generation is showing you. Does nothing on Snapdragon or Exynos.	仅限联发科手机。关闭联发科的帧率调节器 — 它会根据游戏自身的帧率（而不是补帧呈现给你的帧率）来升降手机性能。对骁龙或 Exynos 无效。
+Minimal	极简
+Minimal = smaller text at 60% opacity	极简 = 更小的文字，60% 不透明度
+Missing: 	缺少：
+Modern	现代
+Modern = small readout centred at the top of the screen	现代 = 屏幕顶部居中的小型读数
+Module	模块
+Module is installed but DISABLED in the root manager. Enable it and reboot.	模块已安装，但在 root 管理器中被禁用。请启用它并重启。
+Module is marked for removal — it will be gone after the next reboot. Reinstall the zip to keep it.	模块已被标记为删除 — 下次重启后就会消失。要保留它请重新安装模块包。
+Module mismatch: 	模块不匹配： 
+Module not installed. Flash the OpenFG module zip in your root manager, then reboot.	模块未安装。请在 root 管理器中刷入 OpenFG 模块包，然后重启。
+Multiplier	倍率
+Needs a 64-bit device — OpenGL games only.	需要 64 位设备 — 仅支持 OpenGL 游戏。
+Needs root to check.	需要 root 才能检查。
+Next	下一步
+No FG run recorded yet on the 	尚未在以下应用中记录到补帧运行： 
+No MediaTek FPSGO on this device — nothing to do.	此设备上没有联发科 FPSGO — 无需处理。
+No Vulkan driver — OpenGL games only.	没有 Vulkan 驱动 — 仅支持 OpenGL 游戏。
+No Zygisk found (	未找到 Zygisk（
+No games selected yet. Toggle a game on, play a minute, then re-run for an end-to-end proof.	尚未选择游戏。打开一个游戏开关，玩一分钟，再重新运行以获得端到端验证。
+No hardware H.264 encoder found — the "Video" engine is unavailable (the Software engine still works).	未找到硬件 H.264 编码器 —“Video”引擎不可用（Software 引擎仍可工作）。
+No root. OpenFG needs a rooted device (KernelSU or Magisk) and this app must be granted superuser access.	没有 root。OpenFG 需要已 root 的设备（KernelSU 或 Magisk），并且必须授予本应用超级用户权限。
+Not applied — FPSGO is on (	未应用 — FPSGO 处于开启状态（
+Not available on 	不适用于 
+Not done yet	尚未完成
+Not ready	未就绪
+Note — code 	注意 — 代码 
+Note — code F2	注意 — 代码 F2
+Note — code F3	注意 — 代码 F3
+Notes — how does it run? any issues?	备注 — 运行效果如何？有任何问题吗？
+Notes:	备注：
+Notes: 	备注：
+OFF	关闭
+ON	开启
+Off	关闭
+Off on 	在以下应用上关闭 
+Old Vulkan driver (	Vulkan 驱动过旧（
+On	开启
+On-screen FPS readout for this game (doesn't affect frame gen)	本游戏的屏幕 FPS 读数（不影响补帧）
+Open	打开
+OpenFG Overlay	OpenFG 悬浮层
+OpenFG crash log	OpenFG 崩溃日志
+OpenFG diagnostic	OpenFG 诊断
+OpenFG diagnostic report	OpenFG 诊断报告
+OpenFG module	OpenFG 模块
+OpenFG needs superuser access. Magisk asks when you tap below. On KernelSU or APatch there's no pop-up — open the manager app, allow OpenFG, come back, then tap Restart to apply it.	OpenFG 需要超级用户权限。点击下方按钮时 Magisk 会弹出请求。在 KernelSU 或 APatch 上没有弹窗 — 请打开管理器应用，允许 OpenFG，再回来点击“重启应用”使其生效。
+OpenFG report	OpenFG 报告
+OpenFG: app v1.2 · module 	OpenFG：App v1.2 · 模块 
+OpenGL ES 3.0 not available (	OpenGL ES 3.0 不可用（
+Optional	可选
+Overlay	悬浮层
+Overlay permission off — the in-game menu can't show.	悬浮窗权限已关闭 — 游戏内菜单无法显示。
+PACING	节奏
+Panel: 	面板：
+Performance	性能
+Pick your first game	选择你的第一个游戏
+Position	位置
+Power	功耗
+Preparing…	准备中…
+Quality	质量
+RAM	内存
+Raw trace	原始追踪
+Re-run	重新运行
+Re-run the guided setup that checks root, Zygisk, the module and permissions.	重新运行引导流程，检查 root、Zygisk、模块和权限。
+Ready for frame generation	已就绪，可以补帧
+Ready, with notes	就绪，但有提示
+Ready. Tap "Start application" to arm the trace and launch the game.	已就绪。点击“启动应用”来武装追踪并启动游戏。
+Real + total	真实 + 总计
+Reboot	重启
+Reboot now	立即重启
+Recent activity	最近活动
+Recheck	重新检查
+Refresh	刷新
+Relaunch	重新启动
+Report copied	报告已复制
+Requirements	要求
+Restart app	重启应用
+Root access	Root 权限
+Root not granted — selections can't be saved.	未授予 root — 选项无法保存。
+Root: 	Root：
+Running: 	运行中：
+Saturation	饱和度
+Saturation (	饱和度（
+Save crash log	保存崩溃日志
+Save failed	保存失败
+Saved. Restart the game to apply.	已保存。重启游戏以生效。
+Search apps	搜索应用
+Selected info is added to the counter; none = plain FPS counter.	所选信息会加入计数器；不选 = 纯 FPS 计数器。
+Setup	设置
+Setup wizard	设置向导
+Shadow depth (gamma 	阴影深度（gamma 
+Share OpenFG report	分享 OpenFG 报告
+Share report	分享报告
+Share your setup	分享你的配置
+Share…	分享…
+Sharpness	锐度
+Sharpness — for Bicubic+/FSR1/SGSR (right = sharper)	锐度 — 用于 Bicubic+/FSR1/SGSR（向右 = 更锐利）
+Shell check interrupted	Shell 检查被中断
+Shell check timeout	Shell 检查超时
+Show counter	显示计数器
+Show floating menu	显示浮动菜单
+Show frame counter	显示帧计数器
+Show system apps	显示系统应用
+Sidebar menu	侧边栏菜单
+Skip	跳过
+Skip for now	暂时跳过
+Skipped — no ES 3.0 context.	已跳过 — 没有 ES 3.0 上下文。
+Software	软件
+Software quality	软件质量
+Software quality — how hard the software estimator works	软件质量 — 软件估算器的工作强度
+Start application	启动应用
+Start capture ●	开始捕获 ●
+Start metrics ▣	开始监控 ▣
+Start ▣	开始 ▣
+Start ●	开始 ●
+Starting 	正在启动 
+Starting…	启动中…
+State unknown.	状态未知。
+Stays off until you turn this switch back off — leaving the game or closing OpenFG will not put it back. Your original values are saved, so turning this off always restores them exactly.	在你把这个开关关回去之前会一直保持关闭 — 退出游戏或关闭 OpenFG 都不会恢复。你原来的值已保存，所以关闭此开关总能精确恢复它们。
+Step 	步骤 
+Stop ■	停止 ■
+Stopped — code 	已停止 — 代码 
+Stopped — code F1	已停止 — 代码 F1
+Stops the phone from lowering the screen refresh and speed when it gets warm, so frame generation keeps running at full rate.	阻止手机在发热时降低屏幕刷新率和性能，让补帧保持满速运行。
+Superuser granted to the companion app.	已授予本配套应用超级用户权限。
+System	系统
+Target FPS (adaptive)	目标 FPS（自适应）
+Target FPS (adaptive) — auto-picks the multiplier	目标 FPS（自适应） — 自动选择倍率
+Target FPS · adaptive	目标 FPS · 自适应
+Temp	温度
+The game's process exited (closed or crashed). Trace frozen — tap "Copy crash log" now (before rebooting), then Copy report.	游戏进程已退出（被关闭或崩溃）。追踪已冻结 — 请立即点击“复制崩溃日志”（在重启之前），然后复制报告。
+The on-screen FPS readout	屏幕 FPS 读数
+The report contains your device model, Android version, GPU and coded stage markers — no personal data. Paste it to the developer to get a fix.\n\nIf the game CRASHED, tap "Copy crash log" or "Save crash log" right after (before rebooting) and send that too — it captures the graphics-driver error the developer needs.	报告包含你的设备型号、Android 版本、GPU 以及带代码的阶段标记 — 不包含个人数据。把它粘贴给开发者以便修复。\n\n如果游戏崩溃了，请紧接着点击“复制崩溃日志”或“保存崩溃日志”（在重启之前），并一并发送 — 它会捕获开发者需要的那条图形驱动错误信息。
+Theme	主题
+This ROM re-caps the screen to 60 Hz on game launch; the companion corrects it automatically — keep this app installed and its overlay permission granted.	该 ROM 会在游戏启动时把屏幕重新限制到 60 Hz；本配套应用会自动修正 — 请保持该应用已安装且悬浮窗权限已授予。
+This lets the in-game menu and the FPS counter appear on top of your game.	这会让游戏内菜单和 FPS 计数器显示在游戏画面之上。
+This setup can't run frame generation yet — fix the red items below.	当前配置还无法运行补帧 — 请修复下方标红项。
+Top-left	左上
+Top-right	右上
+Total only	仅总计
+Total shows only the presented FPS; Real + total shows base / presented	“仅总计”只显示呈现的 FPS；“真实 + 总计”显示基础 / 呈现
+Tracing — play the game for ~30 seconds, then come back here.	追踪中 — 请玩约 30 秒游戏，然后回到这里。
+Troubleshooting	故障排查
+Turned off for every app in Settings — that wins over this	已在设置中对所有应用关闭 — 其优先级高于本项
+Unlock thermal limit	解锁温控限制
+Unsupported ABI "	不支持的 ABI “
+Update available: 	有可用更新： 
+Update failed: 	更新失败： 
+Update to 	更新至 
+Updates	更新
+Upscaler	超分
+Upscaler — upscales low-res games to screen res; sharpens native-res games	超分 — 把低分辨率游戏放大到屏幕分辨率；并锐化原生分辨率游戏
+Uses a little more battery — the screen stays at full refresh while a frame-gen game is open, instead of dropping down to save power. Turns back off by itself when you close the game.	会多耗一点电 — 打开补帧游戏时，屏幕会保持最高刷新率，而不是为了省电降下来。关闭游戏后会自动恢复。
+Version mismatch: module 	版本不匹配：模块 
+Video	视频
+Video motion engine	视频运动引擎
+Video playback FG	视频播放补帧
+Vulkan games	Vulkan 游戏
+WARNING: trace is from 	警告：追踪来自 
+Waiting for the game to start…	等待游戏启动…
+Watching for frame-gen apps	正在监视补帧应用
+Working…	处理中…
+Works, but: 	可用，但： 
+Writable. No games selected yet — toggle one on in the app list.	可写。尚未选择游戏 — 请在应用列表中打开一个。
+You have 	你有 
+You're on the latest version (	你已是最新版本（
+You're ready! Choose which games get frame generation from the list, then restart the game to see it work. You can skip this and pick later.	你已准备就绪！请从列表中选择哪些游戏启用补帧，然后重启游戏即可看到效果。你也可以跳过，稍后再选。
+Zygisk injector	Zygisk 注入器
+Zygisk is what lets OpenFG hook into your games. Turn it on in Magisk, or install ReZygisk / ZygiskNext on KernelSU or APatch — then reboot your phone and come back here.	Zygisk 是让 OpenFG 注入游戏的关键。请在 Magisk 中启用它，或在 KernelSU/APatch 上安装 ReZygisk / ZygiskNext — 然后重启手机再回到这里。
+an old version (pre-v0.9.14)	旧版本（v0.9.14 之前）
+app download failed	应用下载失败
+app install failed (signature mismatch?)	应用安装失败（签名不一致？）
+app v1.2 module 	App v1.2 模块 
+arm64 — OpenGL and Vulkan games supported.	arm64 — 支持 OpenGL 和 Vulkan 游戏。
+clock unknown	频率未知
+default (on for Mali, off for Adreno)	默认（Mali 开启，Adreno 关闭）
+does not exist	不存在
+foreground probe failed: 	前台探测失败： 
+foreground unknown for 6000ms — taking down overlay for 	前台状态持续 6000ms 未知 — 正在移除以下应用的悬浮层： 
+module download failed	模块下载失败
+module install failed (no supported root manager?)	模块安装失败（没有受支持的 root 管理器？）
+no half-float render targets (SW motion engine may fail; Video engine unaffected)	没有 half-float 渲染目标（软件运动引擎可能失败；Video 引擎不受影响）
+no native fence sync (CPU sync fallback, slightly slower)	没有原生 fence 同步（回退到 CPU 同步，略慢）
+no network or no release found	无网络或未找到发行版本
+not installed	未安装
+overlay shown for 	已为以下应用显示悬浮层 
+packages.list present and writable.	packages.list 存在且可写。
+this GPU	此 GPU
+unknown GPU	未知 GPU
+unknown root	未知 root
+── OpenFG report ─────────────────────────────	── OpenFG 报告 ──────────────────────────
+▣ Logging metrics — tap to Stop	▣ 正在记录指标 — 点击停止
+● Recording — tap to Stop	● 正在录制 — 点击停止
+⚠ If this game actually renders with Vulkan and fights hooks (e.g. HoYo titles), OpenGL can crash it on launch — switch back to Auto or Vulkan to recover.	⚠ 如果该游戏实际使用 Vulkan 渲染且会对抗注入（例如 HoYo 系列），切到 OpenGL 可能在启动时崩溃 — 请切回“自动”或 Vulkan 以恢复。
+⚠ No root — grant superuser access, then Refresh.	⚠ 没有 root — 请授予超级用户权限，然后刷新。
+⚠ OpenFG module not installed — flash the module zip in KernelSU/Magisk and reboot. Frame generation can't run without it.	⚠ OpenFG 模块未安装 — 请在 KernelSU/Magisk 中刷入模块包并重启。没有它无法运行补帧。
+⚠ The phone will run hotter and use more battery. Your device's built-in overheating protection still works — only the early slow-down is turned off. Applies while a frame-gen game is open; turns back on by itself when you close it.	⚠ 手机会更热、更耗电。设备内置的过热保护仍然有效 — 仅关闭了提前降速。仅在打开补帧游戏时生效；关闭游戏后会自动恢复。
+⚠ Version mismatch — app 1.2, module 	⚠ 版本不匹配 — App 1.2，模块 
+⚠ Zygisk not active — the module can't inject into games. Enable Zygisk in Magisk, or install ReZygisk/ZygiskNext on KernelSU/APatch, then reboot.	⚠ Zygisk 未激活 — 模块无法注入游戏。请在 Magisk 中启用 Zygisk，或在 KernelSU/APatch 上安装 ReZygisk/ZygiskNext，然后重启。
+✓ Update installed — reboot to finish.	✓ 更新已安装 — 重启后完成。
